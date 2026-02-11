@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      header {
+        display: flex;
+        align-items: center;
+        padding: 12px 24px;
+        border-bottom: 1px solid #ddd;
+      }
+      header img {
+        height: 50px;
+        margin-right: 32px;
+      }
+      nav a {
+        margin-right: 20px;
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+      }
+      nav a:hover {
+        text-decoration: underline;
+      }
+      main {
+        padding: 24px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <a href="/">
+        <img src="/assets/images/logo.png" alt="Race logo">
+      </a>
+
+      <nav>
+        <a href="/info">Info</a>
+        <a href="/registration">Registration</a>
+        <a href="/charity">Charity</a>
+        <a href="/about">About Us</a>
+      </nav>
+    </header>
+
+    <main>
+      {{ content }}
+    </main>
+  </body>
+</html>
